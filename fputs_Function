@@ -1,0 +1,10 @@
+int main()
+{
+   FILE *fp;
+    fp = fopen("fputs_test.txt", "w+");
+    fputs("This is Guru 99 tutorial on fputs,", fp);
+    fputs("We don't need to use for loop\n", fp);
+    fputs("Easier than fputc function\n", fp);
+    fclose(fp);
+    return 0;
+}
