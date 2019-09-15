@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   FILE *fpointer;
+   //char buffer[30], c;
+    printf("----read and parse data----\n");
+    fpointer = fopen("fprintf_test.txt", "r");// reset a pointer
+    char str1[10], str2[2], str3[20], str4[2];
+    fscanf(fpointer, "%s %s %s %s", str1, str2, str3, str4);
+    printf("Read String1 |%s|\n", str1);
+    printf("Read String2 |%s|\n", str2);
+    printf("Read String3 |%s|\n", str3);
+    printf("Read String4 |%s|\n", str4);
+    fclose(fpointer);
+    return 0;
+  
+}
