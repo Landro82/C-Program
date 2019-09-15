@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   FILE *fptr;
+    fptr = fopen("fprintf_test.txt", "w");// "w" defines writing Mode
+    /*Write to file*/
+    fprintf(fptr, "Learning C with Guru 99\n");
+   
+    fclose(fptr);
+    return 0;
+}
