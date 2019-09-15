@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   FILE *fpointer;
+   char buffer[30], c;
+    fpointer = fopen("fprintf_test.txt", "r");// "r" defines reading Mode
+    /*Read the file*/
+    printf("----read a line----\n");
+    fgets(buffer, 50, fpointer);
+    printf("%s\n", buffer);
+    fclose(fpointer);
+    return 0;
+}
