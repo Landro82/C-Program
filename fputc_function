@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   /*FILE *fp;
+    fp = fopen("data.txt", "r");
+    fclose(fp);*/
+    int i;
+    FILE *fptr;
+    char fn[50];
+    char str[] = "Hello, I am beginner in C programming\n";
+    fptr = fopen("fputc_text.txt", "w");//"w" defines "writing Mode"
+    for(i = 0; str[i]!= '\n'; i++){
+        /*Write fputc() function*/
+        fputc(str[i], fptr);
+    }
+    fclose(fptr);
+    return 0;
+}
