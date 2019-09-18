@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int add(int a, int b); // function definition
+int main()
+{
+    int a = 10, b = 20;
+    int c = add(10, 20); // function call
+    printf("Addition: %d\n", c);
+    return 0;
+    //getch();
+}
+
+int add(int a, int b)
+{
+    int c;
+    c = a + b;
+    return c;
+}
