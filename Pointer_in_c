@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a = 10; // Variable declaration
+    int *p;    //Pointer variable declaration
+    p = &a;   //Store address of variable a in pointer p
+    printf("Address stored in a variable p is: %d\n", p); //Accessing the address
+    printf("Value stored in a variable p is: %d\n", *p); // Accessing value
+    /*NULL Pointer */
+    int *ptr = NULL; // NULL pointer
+    printf("The value inside p is: %x \n ", ptr);
+    /*Void Pointer*/
+    void *ptr1 = NULL; // Void pointer
+    printf("The size of pointer is: %d\n", sizeof(p));
+    /* Wild pointer*/
+    int *ptr2;
+    printf("\n %d", *ptr2);
+    return 0;
+}
