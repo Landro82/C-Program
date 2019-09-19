@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int arr[5] = {1,2,3,4,5}; // Array initialization
+    int *p; // Pointer declaration
+    /* The ptr points to the first elt of array*/
+    p = arr; /*We can also type simply ptr == &a[0]*/
+    printf("printing the array elements using pointer\n");
+    for(int i = 0; i < 5; i++) // loop for traversing array elements
+    {
+        printf("\n%x", *p); // Loop for traversing array elements
+        p++; // incrementation to the next element, you can also write p = p + 1
+    }
+    return 0;
+}
