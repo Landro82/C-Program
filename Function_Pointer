@@ -1,0 +1,19 @@
+#include <stdio.h>
+void Hi_function(int times); //function
+int main()
+{
+    void (*function_ptr)(int); //fonction pointer declaration
+    function_ptr = Hi_function; //Pointer assignment
+    function_ptr(5); // Function call
+    //return 0;
+    //printf("Hello World");
+
+    return 0;
+}
+void Hi_function(int times)
+{
+    int k;
+    for(k = 0; k < times; k++){
+        printf("Hi\n");
+    }
+}
