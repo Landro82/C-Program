@@ -1,0 +1,32 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+main() {
+   unsigned int x = 48;	/* 48 = 0011 0000 */  
+   unsigned int y = 13;	/* 13 = 0000 1101 */
+   int z = 0;           
+
+   z =x & y;       /* 0 = 0000 0000 */ 
+   printf("Bitwise AND Operator - x & y = %d\n", z );
+
+   z = x | y;       /* 61 = 0011 1101 */
+   printf("Bitwise OR Operator - x | y = %d\n", z );
+
+   z= x^y;       /* 61 = 0011 1101 */
+   printf("Bitwise XOR Operator- x^y= %d\n", z);
+
+   z = ~x;          /*-61 = 1100 0011 */
+   printf("Bitwise One's Complement Operator - ~x = %d\n", z);
+
+   z = x << 2;     /* 192 = 1100 0000 */
+   printf("Bitwise Left Shift Operator x << 2= %d\n", z );
+
+   z= x >> 2;     /* 12 = 0000 1100 */
+   printf ("Bitwise Right Shift Operator x >> 2= %d\n", z );
+   }
